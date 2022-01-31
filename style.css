@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+
+:root{
+    --green:#27ae60;
+    --black:#192a56;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+  
+*{
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+ 
+    
+   
+}
+body{
+   background: var(--black);
+   height: 100vh;
+    
+}
+/* #message{
+
+} */
+.container{
+    width: 40%;
+   margin:200px auto 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    min-width: 450px;
+   
+    min-height: 100px;
+   
+}
+.text::placeholder{
+    font-size: 1rem;
+    font-weight: 4px;
+    color: var(--black);
+    
+}
+#newtask{
+    position: relative;
+padding: 30px 20px;
+}
+#newtask input{
+    width: 75%;
+    height: 45px;
+    padding: 12px;
+    color: #111111;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bolder;
+    border: 2px solid var(--black);
+}
+
+#newtask input:focus{
+    outline: none;
+    border-color: #0d75ec;
+}
+#newtask button{
+    position: relative;
+    float: right;
+    background-color: var(--black);
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    width:20%;
+    height: 45px;
+    border-radius: 5px; 
+    font-size: 1.5rem;
+}
+#newtask button:hover{
+    background-color: yellow;
+    color: black;
+    font-weight: bolder;
+}
+
+#tasks{
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-top: 10px;
+}
+
+.task{
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #939697;
+    cursor: pointer;
+    background-color: #c5e1e6;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+}
+.task span{
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.task button{
+    background-color: #0a2ea4;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+}
+.task button:hover{
+    background-color: chartreuse;
+    cursor: pointer;
+    color: black;
+    
+
+}
+
+.alert {
+    padding: 20px;
+    background-color: green;
+    color: white;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
