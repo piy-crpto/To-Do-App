@@ -10,6 +10,7 @@ var tasks = document.getElementById('tasks');
 addbtn.addEventListener("click", checkinput);
 function checkinput() {
     console.log('clicked add btn');
+    console.log(inputval.value.length);
     if (inputval.value.length == 0) {
         alert("Please Enter your Task");
     }
@@ -23,14 +24,14 @@ function checkinput() {
                         </button>
                            </div>`
        // console.log('task added succesfully');
-       var alert = document.getElementById('message');
-       alert.innerHTML = `<div class="alert">
+       var alrt = document.getElementById('message');
+       alrt.innerHTML = `<div class="alert" id="alertAdded">
        <span class="closebtn">&times;</span> 
        <strong>Added! </strong>Your task has been added successfully
      </div>`;
 
      setTimeout(function () {
-       alert.innerHTML = ''
+       alrt.innerHTML = ''
    }, 2000);
 
     }
@@ -41,14 +42,14 @@ function checkinput() {
         addedtasks[i].onclick = function () {
             this.parentNode.remove();
             //console.log('deleted succfully');
-            var alert = document.getElementById('message');
-            alert.innerHTML = `<div class="alert">
+            var alrt = document.getElementById('message');
+            alrt.innerHTML = `<div class="alert" id="alertDeleted">
             <span class="closebtn">&times;</span> 
             <strong>Deleted! </strong>Your task has been deleted successfully
           </div>`;
 
           setTimeout(function () {
-            alert.innerHTML = ''
+            alrt.innerHTML = ''
         }, 2000);
         }
 
@@ -56,7 +57,6 @@ function checkinput() {
    
 
 }
-
 
 
 
